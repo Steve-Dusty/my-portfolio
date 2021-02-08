@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve</title>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <!--Loads particles.js background.-->
+    <div id="particles-js"></div>
+    <script src="{{ url_for('static', filename='js/particles.js-master/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles.js-master/demo/js/app.js') }}"></script>
+    
+    <div class="topnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('projects') }}">Projects</a>
+        <a class="active" href="{{ url_for('contact') }}">Contact</a>
+    </div>
+
+    <div class="contacts">
+        <div class="discord">
+            <a href="https://discord.com" target="_blank"><i class="fab fa-discord fa-3x"></i></a>
+            <span><a>Friend me on Discord:</a><br>Steve-Dusty#7490</span>
+        </div>
+        <div class="email">
+            <a href="mailto:stevedustyk@gmail.com"><i class="far fa-envelope fa-4x"></i></a>
+            <span><a>Email me:</a><br>stevedustyk@gmail.com</span>
+
+        </div>
+    </div>
+
+</body>

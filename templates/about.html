@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve</title>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <!--Loads particles.js background.-->
+    <div id="particles-js"></div>
+    <script src="{{ url_for('static', filename='js/particles.js-master/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles.js-master/demo/js/app.js') }}"></script>
+    
+    <div class="topnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a class="active" href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('projects') }}">Projects</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </div>
+    
+    <div class="about-page">
+        
+        <div class="title">
+            <h1>About me</h1>
+        </div>
+
+        <div class="paragraph">
+            <p1>
+                Hi, I'm Steve. I spend a lot of my time using open-source software and engineering stuff that
+                makes my life easier. I developed an interest computers and how they work since age of 9. I got myself books on computers 
+                and programming. To be frank, the summer of 2020 has been the most beneficial year for me.
+                I had installed, tested, and used many Linux operating systems as I enjoyed doing it.
+                I'm especially active on Discord so you can <a href="{{ url_for('contact') }}">contact</a> me whenever you want.  
+            </p1>
+        </div>
+        <div class="skillset">
+            <p1>I utilize a diversity of languages, libraries, engines, and open-source software on a day-to-day basis 
+                for varieties developments.</p1>
+
+            <!--Here are my icons-->
+            <div class="icons">
+                <div class="webdev">
+                    <img src="{{ url_for('static', filename='images/html5.svg') }}" alt="html5" height="170">
+                    <img src="{{ url_for('static', filename='images/css3.svg') }}" alt="css3" height="170">
+                    <img src="{{ url_for('static', filename='images/javascript.svg') }}" alt="javascript" height="170">
+                    
+                    <div class="description1">
+                        <p1>Web development has introduced me to many new skills. During this journey, I learned HTML5, CSS3, and Javascript, in-depth. 
+                            This has dramatically grew my skills in designing and visual arts. These tools are what I used to build this very portfolio!
+                        </p1>
+                    </div>
+                </div>
+
+                <div class="multipurpose">
+                    <i class="fab fa-node-js"></i>
+                    <img src="{{ url_for('static', filename='images/python.svg') }}" alt="Python" height="160">
+                    <img src="{{ url_for('static', filename='images/c++.svg') }}" alt="C++" height="160">
+                    <div class="description2">
+                        <p1>I use the runtime environment Node.JS and programming languages Python and C++ for multipurpose developments.
+                            Node lets me use many effective developer tools plus scalable networking applications. Python language is loaded with  
+                            a mass amount of modules and libraries for my programs to use. Lastly, C++ is known for its speed. It is a low-leveled statically typed language and is 
+                            the foremost choice when building large graphical applications. Uses procedural programming over CPU exhaustive functions.
+                        </p1>
+                    </div>
+                </div>
+                <div class="other">
+                    <img src="{{ url_for('static', filename='images/godot.svg') }}" alt="Godot" height="160">
+                    <img src="{{ url_for('static', filename='images/git.svg') }}" alt="Git" height="160">
+                    <img src="{{ url_for('static', filename='images/linux-tux.svg') }}" alt="Linux Tux" height="160">
+                    <div class="description3">
+                        <p1>
+                            I make games using the Godot game engine. It makes everything so much easier for me
+                            when I write single player and multiplayer games alike. I've and help built different kinds of games
+                            including RPG, MMO. But in the end, even Godot has limits. As for Git, it's the most popular version control
+                            tool in the world. I always use it for my code so if I mess up, I can always revert back to that version. It's an extremely
+                            valuable skill for developers to know how to use the tool. To conclude, Linux is an open-source kernel
+                            which hundreds of operating systems use it. Currently I'm using Arch OS with a nice KDE user interface. 
+                            Much better than Windows.
+                        </p1>
+                    </div>
+                </div>
+                    <div class="ending">
+                        <h1>And much more...</h1>
+                    </div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>

@@ -22,5 +22,15 @@ def contact():
 def projects():
     return render_template("projects.html")
 
+
+@app.after_request
+def add_header(r):
+  print("[INFO]===> Adding headers...")
+  r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+  r.headers["Pragma"] = "no-cache"
+  r.headers["Expires"] = "0"
+  return r
+
+
 if __name__ == "__main__":
-   app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug=True)
+   app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 80)), debug=True)

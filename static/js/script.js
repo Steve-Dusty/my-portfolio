@@ -1,1 +1,1 @@
-console.log("Working")
+console.log("[INFO]===> JavaScript has been loaded.")

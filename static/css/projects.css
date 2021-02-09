@@ -40,3 +40,21 @@ body {
     background-color: #a8dadcab;
     color: white;
   }
+
+.container {
+  display: flex;
+  justify-content: center;
+  color: #d4cfcf;
+
+}
+
+.title {
+  font-weight: bolder;
+
+}
+
+/* The start of listing the projects. */
+.project-1 {
+  
+  
+}

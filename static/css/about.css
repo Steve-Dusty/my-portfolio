@@ -44,9 +44,13 @@ body {
     display: flex;
     color: #d4cfcf;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 35px 30px 50px 30px;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+
 }
 
 .title {
@@ -78,7 +82,6 @@ body {
 
 .icons {
   font-size: 200px;
-  background-color: red;
   background:rgba(56,255,255,0.1);
   border-radius: 100px;
 }  

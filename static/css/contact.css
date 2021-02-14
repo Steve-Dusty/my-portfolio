@@ -44,7 +44,12 @@ body {
 .contacts {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  margin-top: 5%;
+}
+
+.title {
+  text-align: center;
+  color: #d4cfcf;
 }
 
 .fa-discord {
@@ -67,6 +72,9 @@ body {
 
 /* Time for email contact option */
 
+.fa-envelope {
+  color: white;
+}
 .email span {
   display: inline-block;
   font-size: 30px;

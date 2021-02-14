@@ -52,7 +52,7 @@ body {
 }
 
 .begin {
-    margin-top: 100px;
+    margin-top: 2%;
     color: #d4cfcf;
 }
 
@@ -61,6 +61,7 @@ body {
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
+    margin-top: 10%;
 
 }
 

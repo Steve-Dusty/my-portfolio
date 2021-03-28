@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve</title>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/404.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <div class="home">
+        <h1 class="myname">404 Page Not Found</h1>
+        <a class="button" href="{{ url_for('about') }}"><span>Go back to home</span></a>
+    </div>
+
+    <!--Loads particles.js background.-->
+    <div id="particles-js"></div>
+    <script src="{{ url_for('static', filename='js/particles.js-master/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles.js-master/demo/js/app.js') }}"></script>
+
+</body>
+</html>

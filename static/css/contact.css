@@ -60,7 +60,6 @@ body {
 .discord span {
   display: inline-block;
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif ;
   color: #d4cfcf;
   padding: 20px;
 }
@@ -78,12 +77,28 @@ body {
 .email span {
   display: inline-block;
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif ;
   color: #d4cfcf;
   padding: 20px;
 }
 
 .email a {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.fa-github{
+  color: #F4CBB2;
+}
+
+
+.github span {
+  display: inline-block;
+  font-size: 30px;
+  color: #d4cfcf;
+  padding: 20px;
+}
+
+.github a {
   font-size: 20px;
   text-decoration: underline;
 }
